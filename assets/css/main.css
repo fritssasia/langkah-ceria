@@ -159,7 +159,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 100px;
   margin-right: 8px;
 }
 
@@ -1002,7 +1002,6 @@ section,
   position: relative;
   inset: 0;
   z-index: 3;
-  padding: 140px 0 60px 0;
 }
 
 .hero .btn {
@@ -1058,13 +1057,6 @@ section,
   background: var(--accent-color) !important;
 }
 /* btn outline : end */
-
-@media (max-width: 768px),
-(max-height: 480px) {
-  .hero .info {
-    padding: 100px 50px 60px 50px;
-  }
-}
 
 .hero .info h2 {
   margin-bottom: 30px;
@@ -2312,7 +2304,6 @@ section,
   padding: 12px 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   font-size: 15px;
-  display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
@@ -2364,6 +2355,33 @@ section,
 
 .pricing .pricing-item.featured .btn-pricing:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+
+.pricing-cta {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.pricing-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.pricing-cta .btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.pricing-cta .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), #000 15%);
+  border-color: color-mix(in srgb, var(--accent-color), #000 15%);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
