@@ -502,6 +502,10 @@ h6 {
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
+#footer img {
+  margin: 0;
+}
+
 .footer {
   color: var(--default-color);
   background: var(--background-color);
@@ -722,6 +726,10 @@ h6 {
   .footer .footer-bottom .copyright p {
     text-align: center;
     margin-bottom: 15px;
+  }
+
+  #footer img {
+    margin: auto;
   }
 }
 
@@ -2234,6 +2242,19 @@ section,
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
+#promo-card .card .card-body p {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#promo-card .card {
+  background-color: var(--accent-color);
+  border: 0;
+  border-radius: 16px;
+}
+
 .pricing .pricing-item {
   padding: 40px;
   background-color: var(--surface-color);
@@ -2386,6 +2407,10 @@ section,
 }
 
 @media (max-width: 768px) {
+  #promo-card .width {
+    width: 50%;
+  }
+
   .pricing .pricing-item {
     padding: 30px 20px;
   }
@@ -2411,6 +2436,12 @@ section,
     font-size: 14px;
   }
 }
+
+@media (max-width: 992px) {
+  #promo-card .width {
+    width: 100%;
+  }
+} 
 
 /*--------------------------------------------------------------
 # Faq Section
